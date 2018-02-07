@@ -52,7 +52,7 @@ app.post('/test2', MultiUpload.middleware, (req, res) => {
     res.end();
 });
 
-//save all file in '../upload'
+//save all file in '../uploads'
 app.post('/test3', new MultiUpload('../uploads'), (req, res) => {
     console.log(req.files[0].path);
     res.end();
